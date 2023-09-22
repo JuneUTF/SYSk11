@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHAN VAN HUYNH</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+    <link rel="stylesheet" th:href="@{/style/css/style.css}">
+</head>
+
+<body >
+<div class="show" th:if="${login}">
+    <h1 th:text="${login}"></h1>
+</div>
+    <div class="show" th:if="${username}">
+        <div class="show_user"><span th:text="${youname}"></span></div>
+        <a class="user_logout" th:href="@{/logout}">ログアウト</a>
+        <a class="user_logout" th:href="@{/newpass}">パスワード変更</a>
+        <div class="user-tt">
+        <div><span> 会員ユーザー :</span> <span th:text="${username}"></span></div>
+        <div><span> パスワード :</span> <span th:text="${password}"></span></div>
+        <div><span> 階級 :</span> <span th:text="${role}"></span></div>
+        <div><span> 名前 :</span> <span th:text="${youname}"></span></div>
+        <div><span> よみがな :</span> <span th:text="${readname}"></span></div>
+        <div><span> 生年月日</span> <span th:text="${birthday}"></span></div>
+        <div><span> メールアドレス :</span> <span th:text="${email}"></span></div>
+        <div><span> 性別 :</span> <span th:text="${sex}"></span></div>
+        <div><span> 国籍 :</span> <span th:text="${contry}"></span></div>
+        <div><span> 趣味 :</span> <span th:text="${hobbies}"></span></div>
+        </div>
+    </div>
+</body >
+</html >

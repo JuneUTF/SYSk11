@@ -1,0 +1,197 @@
+2023-04-05 12:34:06.012  INFO   - Starting SysApplication using Java 11.0.16.1 on JuneUTF with PID 27952 (C:\Users\juneu\OneDrive\Máy tính\K&K\sys\target\classes started by juneu in C:\Users\juneu\OneDrive\Máy tính\K&K\sys)
+2023-04-05 12:34:06.026  INFO   - No active profile set, falling back to 1 default profile: "default"
+2023-04-05 12:34:06.134  INFO   - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-05 12:34:06.136  INFO   - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-05 12:34:08.551  INFO   - Tomcat initialized with port(s): 8080 (http)
+2023-04-05 12:34:08.576  INFO   - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-05 12:34:08.577  INFO   - Starting service [Tomcat]
+2023-04-05 12:34:08.578  INFO   - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-05 12:34:08.739  INFO   - Initializing Spring embedded WebApplicationContext
+2023-04-05 12:34:08.739  INFO   - Root WebApplicationContext: initialization completed in 2602 ms
+2023-04-05 12:34:09.501  INFO   - Adding welcome page template: index
+2023-04-05 12:34:09.964  INFO   - LiveReload server is running on port 35729
+2023-04-05 12:34:09.994  INFO   - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-05 12:34:10.038  INFO   - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-05 12:34:10.058  INFO   - Started SysApplication in 4.717 seconds (JVM running for 6.674)
+2023-04-05 12:34:19.684  INFO   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-05 12:34:19.686  INFO   - Initializing Servlet 'dispatcherServlet'
+2023-04-05 12:34:19.687  INFO   - Completed initialization in 1 ms
+2023-04-05 12:34:36.909  WARN   - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [326] milliseconds.
+2023-04-05 12:35:27.965  INFO   - HikariPool-1 - Starting...
+2023-04-05 12:35:28.239  INFO   - HikariPool-1 - Start completed.
+2023-04-05 12:35:28.303  ERROR  - ログイン失敗：huynhが存じません
+2023-04-05 12:36:36.000  INFO   - 1111で登録できました
+2023-04-05 12:36:40.317  INFO   - 1111              ログインしました
+2023-04-05 12:36:44.841  INFO   - 1111              ログインしました
+2023-04-05 12:37:00.988  WARN   - 1111をログアウトできました
+2023-04-05 12:37:06.601  INFO   - 1111              ログインしました
+2023-04-05 12:37:06.612  ERROR  - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at kk.soft.co.jp.sys.controller.UseController.LoginUser(UseController.java:82)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2023-04-05 12:38:30.687  INFO   - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-05 12:38:31.015  INFO   - Pausing ProtocolHandler ["http-nio-8080"]
+2023-04-05 12:38:31.015  INFO   - Stopping service [Tomcat]
+2023-04-05 12:38:31.017  INFO   - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-05 12:38:31.031  WARN   - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.16.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.16.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.16.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.16.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.16.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.16.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.16.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.16.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.16.1/java.lang.Thread.run(Thread.java:829)
+2023-04-05 12:38:31.033  INFO   - Stopping ProtocolHandler ["http-nio-8080"]
+2023-04-05 12:38:31.038  INFO   - Destroying ProtocolHandler ["http-nio-8080"]
+2023-04-05 12:38:31.045  INFO   - HikariPool-1 - Shutdown initiated...
+2023-04-05 12:38:31.055  INFO   - HikariPool-1 - Shutdown completed.
+2023-04-05 12:38:31.191  INFO   - Starting SysApplication using Java 11.0.16.1 on JuneUTF with PID 27952 (C:\Users\juneu\OneDrive\Máy tính\K&K\sys\target\classes started by juneu in C:\Users\juneu\OneDrive\Máy tính\K&K\sys)
+2023-04-05 12:38:31.193  INFO   - No active profile set, falling back to 1 default profile: "default"
+2023-04-05 12:38:31.667  INFO   - Tomcat initialized with port(s): 8080 (http)
+2023-04-05 12:38:31.668  INFO   - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-05 12:38:31.668  INFO   - Starting service [Tomcat]
+2023-04-05 12:38:31.668  INFO   - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-05 12:38:31.709  INFO   - Initializing Spring embedded WebApplicationContext
+2023-04-05 12:38:31.710  INFO   - Root WebApplicationContext: initialization completed in 510 ms
+2023-04-05 12:38:31.879  INFO   - Adding welcome page template: index
+2023-04-05 12:38:31.977  INFO   - LiveReload server is running on port 35729
+2023-04-05 12:38:31.997  INFO   - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-05 12:38:32.003  INFO   - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-05 12:38:32.013  INFO   - Started SysApplication in 0.892 seconds (JVM running for 268.629)
+2023-04-05 12:38:32.017  INFO   - Condition evaluation unchanged
+2023-04-05 12:38:33.666  INFO   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-05 12:38:33.668  INFO   - Initializing Servlet 'dispatcherServlet'
+2023-04-05 12:38:33.671  INFO   - Completed initialization in 3 ms
+2023-04-05 12:38:33.682  INFO   - HikariPool-2 - Starting...
+2023-04-05 12:38:33.730  INFO   - HikariPool-2 - Start completed.
+2023-04-05 12:38:33.739  INFO   - 1111              ログインしました
+2023-04-05 12:38:47.467  WARN   - nullをログアウトできました
+2023-04-05 12:38:51.855  INFO   - 1111              ログインしました
+2023-04-05 12:39:37.620  INFO   - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-05 12:39:37.947  INFO   - Pausing ProtocolHandler ["http-nio-8080"]
+2023-04-05 12:39:37.948  INFO   - Stopping service [Tomcat]
+2023-04-05 12:39:37.949  INFO   - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-05 12:39:37.955  WARN   - The web application [ROOT] appears to have started a thread named [HikariPool-2 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.16.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.16.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.16.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.16.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.16.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.16.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.16.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.16.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.16.1/java.lang.Thread.run(Thread.java:829)
+2023-04-05 12:39:37.957  INFO   - Stopping ProtocolHandler ["http-nio-8080"]
+2023-04-05 12:39:37.961  INFO   - Destroying ProtocolHandler ["http-nio-8080"]
+2023-04-05 12:39:37.964  INFO   - HikariPool-2 - Shutdown initiated...
+2023-04-05 12:39:37.973  INFO   - HikariPool-2 - Shutdown completed.
+2023-04-05 12:39:38.093  INFO   - Starting SysApplication using Java 11.0.16.1 on JuneUTF with PID 27952 (C:\Users\juneu\OneDrive\Máy tính\K&K\sys\target\classes started by juneu in C:\Users\juneu\OneDrive\Máy tính\K&K\sys)
+2023-04-05 12:39:38.094  INFO   - No active profile set, falling back to 1 default profile: "default"
+2023-04-05 12:39:38.472  INFO   - Tomcat initialized with port(s): 8080 (http)
+2023-04-05 12:39:38.473  INFO   - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-05 12:39:38.474  INFO   - Starting service [Tomcat]
+2023-04-05 12:39:38.474  INFO   - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-05 12:39:38.508  INFO   - Initializing Spring embedded WebApplicationContext
+2023-04-05 12:39:38.509  INFO   - Root WebApplicationContext: initialization completed in 411 ms
+2023-04-05 12:39:38.648  INFO   - Adding welcome page template: index
+2023-04-05 12:39:38.720  INFO   - LiveReload server is running on port 35729
+2023-04-05 12:39:38.732  INFO   - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-05 12:39:38.737  INFO   - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-05 12:39:38.745  INFO   - Started SysApplication in 0.703 seconds (JVM running for 335.361)
+2023-04-05 12:39:38.748  INFO   - Condition evaluation unchanged
+2023-04-05 12:39:39.826  INFO   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-05 12:39:39.828  INFO   - Initializing Servlet 'dispatcherServlet'
+2023-04-05 12:39:39.830  INFO   - Completed initialization in 1 ms
+2023-04-05 12:39:39.833  WARN   - nullをログアウトできました
+2023-04-05 12:39:45.793  INFO   - HikariPool-3 - Starting...
+2023-04-05 12:39:45.938  INFO   - HikariPool-3 - Start completed.
+2023-04-05 12:39:45.951  INFO   - 1111              ログインしました
+2023-04-05 13:17:47.963  INFO   - Application shutdown requested.
+2023-04-05 13:17:48.253  INFO   - Pausing ProtocolHandler ["http-nio-8080"]
+2023-04-05 13:17:48.254  INFO   - Stopping service [Tomcat]
+2023-04-05 13:17:48.255  INFO   - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-05 13:17:48.259  WARN   - The web application [ROOT] appears to have started a thread named [HikariPool-3 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.16.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.16.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.16.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.16.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.16.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.16.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.16.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.16.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.16.1/java.lang.Thread.run(Thread.java:829)
+2023-04-05 13:17:48.261  INFO   - Stopping ProtocolHandler ["http-nio-8080"]
+2023-04-05 13:17:48.264  INFO   - Destroying ProtocolHandler ["http-nio-8080"]
+2023-04-05 13:17:48.268  INFO   - HikariPool-3 - Shutdown initiated...
+2023-04-05 13:17:48.274  INFO   - HikariPool-3 - Shutdown completed.
+2023-04-05 14:30:09.944  INFO   - Starting SysApplication using Java 11.0.16.1 on JuneUTF with PID 21124 (C:\Users\juneu\OneDrive\Máy tính\K&K\sys\target\classes started by juneu in C:\Users\juneu\OneDrive\Máy tính\K&K\sys)
+2023-04-05 14:30:09.950  INFO   - No active profile set, falling back to 1 default profile: "default"
+2023-04-05 14:30:10.035  INFO   - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-05 14:30:10.035  INFO   - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-05 14:30:12.143  INFO   - Tomcat initialized with port(s): 8080 (http)
+2023-04-05 14:30:12.162  INFO   - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-05 14:30:12.163  INFO   - Starting service [Tomcat]
+2023-04-05 14:30:12.164  INFO   - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-05 14:30:12.308  INFO   - Initializing Spring embedded WebApplicationContext
+2023-04-05 14:30:12.308  INFO   - Root WebApplicationContext: initialization completed in 2272 ms
+2023-04-05 14:30:13.114  INFO   - Adding welcome page template: index
+2023-04-05 14:30:13.511  INFO   - LiveReload server is running on port 35729
+2023-04-05 14:30:13.540  INFO   - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-05 14:30:13.584  INFO   - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-05 14:30:13.607  INFO   - Started SysApplication in 4.355 seconds (JVM running for 6.347)
+2023-04-05 14:42:00.355  INFO   - Application shutdown requested.
+2023-04-05 14:42:00.708  INFO   - Pausing ProtocolHandler ["http-nio-8080"]
+2023-04-05 14:42:00.709  INFO   - Stopping service [Tomcat]
+2023-04-05 14:42:00.724  INFO   - Stopping ProtocolHandler ["http-nio-8080"]
+2023-04-05 14:42:00.729  INFO   - Destroying ProtocolHandler ["http-nio-8080"]

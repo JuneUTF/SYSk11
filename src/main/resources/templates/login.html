@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHAN VAN HUYNH</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+    <link rel="stylesheet" th:href="@{/style/css/style.css}">
+</head>
+
+<body>
+    <!-- Pills navs -->
+    <div id="login-reg">
+        <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="tab-login" data-mdb-toggle="pill" href="#pills-login" role="tab"
+                    aria-controls="pills-login" aria-selected="true">ログイン</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="tab-register" data-mdb-toggle="pill" href="#pills-register" role="tab"
+                    aria-controls="pills-register" aria-selected="false">登録</a>
+            </li>
+        </ul>
+        <!-- Pills navs -->
+
+        <!-- Pills content -->
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+                <div th:if="${success}">
+                    <div class="alert alert-success" th:text="${success}"></div>
+                </div>
+                <div th:if="${login_error}">
+                    <div class="alert alert-danger" th:text="${login_error}"></div>
+                </div>
+               <form th:action="@{/information}" method="post">
+
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                        <input type="text" id="username" name="username" class="form-control" />
+                        <label class="form-label" for="username">会員ユーザー </label>
+                    </div>
+
+                    <!-- Password input -->
+                    <div class="form-outline mb-4">
+                        <input type="password" id="password" name="password" class="form-control" />
+                        <label class="form-label" for="password">パスワード</label>
+                    </div>
+
+                    <!-- 2 column grid layout -->
+                    <div class="row mb-4">
+                        <div class="col-md-12 d-flex justify-content-center">
+                            <!-- Checkbox -->
+                            <div class="form-check mb-3 mb-md-0">
+                                <input class="form-check-input" type="checkbox" value="check" id="loginCheck" for="loginCheck" name="loginCheck" />
+                                <label class="form-check-label"> 次回からメールアドレスの入力を省略する </label>
+                            </div>
+                        </div>
+
+                            <!-- Simple link -->
+                        <div class="col-md-12 d-flex justify-content-center">
+                            <a href="/forgotpassword">パスワードを忘れる方</a>
+                        </div>
+                    </div>
+
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary btn-block mb-4">ログイン</button>
+
+                    <!-- Register buttons -->
+                    <div class="text-center">
+                        <p>初めての方をご利用ですか？ <a href="/register">新規会員登録</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
+                <!-- success message -->
+                <div th:if="${error}">
+                    <div class="alert alert-warning" th:text="${error}"></div>
+                </div>
+               <form th:action="@{/registration}" method="post">
+                    <!-- 会員ユーザー -->
+                    <div class="form-login-reg mb-1">
+                        <p>会員ユーザー<span>(*)</span></p>
+                        <input type="text" id="username"  for="username" name="username" />
+                        <div th:if="${errorusername}">
+                    		<div class="error" th:text="${errorusername}"></div>
+                		</div>
+                    </div>
+
+                    <!-- パスワード -->
+                    <div class="form-login-reg">
+                        <p>パスワード<span>(*)</span></p>
+                        <input type="password" id="password" for="Password" name="password" />
+						<div th:if="${errorpass}">
+                    		<div class="error" th:text="${errorpass}"></div>
+                		</div>
+                    </div>
+                    <!-- 再パスワード -->
+                    <div class="form-login-reg">
+                        <p >再パスワード<span>(*)</span></p>
+                        <input type="password" id="repeatpassword" for="repeatpassword" name="repeatpassword" />
+                    </div>
+
+                    <!-- 名前 -->
+                    <div class="form-login-reg">
+                        <p >名前<span>(*)</span></p>
+                        <input type="text" id="youname" for="youname" name="youname" />
+                    </div>
+						<div th:if="${erroryouname}">
+                    		<div class="error" th:text="${erroryouname}"></div>
+                		</div>
+                    <!-- よみがな -->
+                    <div class="form-login-reg">
+                        <p >よみがな</p>
+                        <input type="text" id="readname" for="readname" name="readname"/>
+                    </div>
+
+                    <!-- BirthDay -->
+                    <div class="form-login-reg">
+                        <p>生年月日</p>
+                        <input type="date" id="birthday" for="birthday" name="birthday" />
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-login-reg">
+                        <p >メールアドレス</p>
+                        <input type="email" id="email" name="email" />
+                    </div>
+
+                    <!-- 性別 -->
+                    <div class="form-login-reg">
+                        <p>性別</p>
+                        <input type="radio" id="sex" name="sex" value="Male">
+                        <label for="sex">男性</label><br>
+                        <input type="radio" id="sex" name="sex" value="Female">
+                        <label for="sex">女性</label><br>
+
+                    </div>
+
+                    <!-- 国籍 -->
+                    <div class="form-login-reg">
+                        <p>国籍</p>
+                        <select for="contry" class="active" name="contry">
+                            <option value="選択">まだ選択していません</option>
+                            <option value="ベトナム">ベトナム</option>
+                            <option value="ネパール">ネパール</option>
+                            <option value="中国">中国</option>
+                            <option value="日本">日本</option>
+                        </select>
+                    </div>
+
+                    <!-- 趣味 -->
+                    <div class="form-login-reg mb-4">
+                        <p >趣味</p>
+                        <input type="text" id="hobbies" for="hobbies" name="hobbies"/>
+                    </div>
+
+                    <!-- Checkbox -->
+                    <div class="form-check d-flex justify-content-center mb-4">
+                        <input class="form-check-input me-2" type="checkbox" value="check" id="registerCheck" for="registerCheck" name="registerCheck"                            aria-describedby="registerCheckHelpText" />
+                        <label class="form-check-label" for="registerCheck">
+                            利用規約に同意してお進みください
+                        </label>
+                    </div>
+
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary btn-block mb-3">登録</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Pills content -->
+    <script src="style/js/login.js"></script>
+</body>
+
+</html>

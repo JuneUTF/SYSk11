@@ -1,0 +1,70 @@
+#login-reg{
+    width: 100%;
+    max-width: 414px;
+    margin: 0 auto;
+}
+.form-login-reg {
+	width:100%;
+}
+.form-login-reg p{
+	width:100%;
+	margin-bottom: 0;
+}
+.form-login-reg p span{
+	color:red;
+}
+.form-login-reg .error{
+	width:100%;
+	color:red;
+}
+.form-login-reg input{
+	width:100%;
+}
+.form-login-reg input#sex{
+	width:10px;
+}
+.form-login-reg input#hobbies{
+	height:50px;
+}
+.show{
+    width: 100%;
+    max-width: 414px;
+    margin: 0 auto;
+    margin-top: 20px;
+    box-shadow: 0 10px 18px #b5ddd1, 0 18px 12px #d7e7a9;
+    border-radius: 5px;
+}
+.show_user{
+    font-family: 'Baloo 2', cursive;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 0 13.36px 8.896px #2c482e, 0 -2px 1px #aeffb4;
+    color: #6fb374;
+    background-color: #fdbccf;
+    border-top-right-radius:5px ;
+    border-top-left-radius:5px ;
+}
+.user-tt{
+    margin-top: 25px;
+    padding: 20px;
+    font-size: 16px
+}
+.user-tt span{
+    overflow-wrap: break-word;
+}
+a.user_logout{
+    display: block;
+    float: right;
+    padding: 10px;
+    height: 40px;
+    line-height: 20px;
+    margin: 5px;
+    border-color: #3498db;
+    color: #000;
+    border-radius: 5px;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    transition: all 150ms ease-in-out;  
+    }
+    a.user_logout:hover {
+          box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}

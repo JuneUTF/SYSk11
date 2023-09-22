@@ -1,0 +1,225 @@
+2023-03-28 13:57:23.728  INFO   - Application shutdown requested.
+2023-03-28 13:57:24.123  INFO   - Pausing ProtocolHandler ["http-nio-8080"]
+2023-03-28 13:57:24.123  INFO   - Stopping service [Tomcat]
+2023-03-28 13:57:24.130  INFO   - Stopping ProtocolHandler ["http-nio-8080"]
+2023-03-28 13:57:24.135  INFO   - Destroying ProtocolHandler ["http-nio-8080"]
+2023-03-28 13:57:29.115  INFO   - Starting SysApplication using Java 11.0.16.1 on JuneUTF with PID 24740 (C:\Users\juneu\OneDrive\Máy tính\K&K\sys\target\classes started by juneu in C:\Users\juneu\OneDrive\Máy tính\K&K\sys)
+2023-03-28 13:57:29.121  INFO   - No active profile set, falling back to 1 default profile: "default"
+2023-03-28 13:57:29.216  INFO   - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-28 13:57:29.217  INFO   - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-28 13:57:31.264  INFO   - Tomcat initialized with port(s): 8080 (http)
+2023-03-28 13:57:31.283  INFO   - Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-28 13:57:31.284  INFO   - Starting service [Tomcat]
+2023-03-28 13:57:31.284  INFO   - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-03-28 13:57:31.433  INFO   - Initializing Spring embedded WebApplicationContext
+2023-03-28 13:57:31.434  INFO   - Root WebApplicationContext: initialization completed in 2216 ms
+2023-03-28 13:57:32.236  INFO   - Adding welcome page template: index
+2023-03-28 13:57:32.635  INFO   - LiveReload server is running on port 35729
+2023-03-28 13:57:32.662  INFO   - Starting ProtocolHandler ["http-nio-8080"]
+2023-03-28 13:57:32.696  INFO   - Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-28 13:57:32.716  INFO   - Started SysApplication in 4.257 seconds (JVM running for 6.165)
+2023-03-28 13:57:37.462  INFO   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-28 13:57:37.463  INFO   - Initializing Servlet 'dispatcherServlet'
+2023-03-28 13:57:37.464  INFO   - Completed initialization in 1 ms
+2023-03-28 13:57:38.017  WARN   - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [479] milliseconds.
+2023-03-28 13:57:41.938  INFO   - HikariPool-1 - Starting...
+2023-03-28 13:57:42.157  INFO   - HikariPool-1 - Start completed.
+2023-03-28 13:57:42.212  ERROR  - ログイン失敗：ádが存じません
+2023-03-28 13:58:00.599  ERROR  - PhanHuynh          ログインがパスワードが一致しません
+2023-03-28 14:07:44.027  INFO   - PhanHuynh         ログインしました
+2023-03-28 14:08:03.227  INFO   - 123変更できました
+2023-03-28 14:08:07.548  WARN   - PhanHuynhをログアウトできました
+2023-03-28 14:10:50.745  INFO   - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-03-28 14:10:51.139  INFO   - Pausing ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:10:51.140  INFO   - Stopping service [Tomcat]
+2023-03-28 14:10:51.144  INFO   - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-28 14:10:51.151  WARN   - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.16.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.16.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.16.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.16.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.16.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.16.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.16.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.16.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.16.1/java.lang.Thread.run(Thread.java:829)
+2023-03-28 14:10:51.153  INFO   - Stopping ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:10:51.160  INFO   - Destroying ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:10:51.167  INFO   - HikariPool-1 - Shutdown initiated...
+2023-03-28 14:10:51.179  INFO   - HikariPool-1 - Shutdown completed.
+2023-03-28 14:10:51.328  INFO   - Starting SysApplication using Java 11.0.16.1 on JuneUTF with PID 24740 (C:\Users\juneu\OneDrive\Máy tính\K&K\sys\target\classes started by juneu in C:\Users\juneu\OneDrive\Máy tính\K&K\sys)
+2023-03-28 14:10:51.329  INFO   - No active profile set, falling back to 1 default profile: "default"
+2023-03-28 14:10:51.756  INFO   - Tomcat initialized with port(s): 8080 (http)
+2023-03-28 14:10:51.757  INFO   - Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:10:51.758  INFO   - Starting service [Tomcat]
+2023-03-28 14:10:51.758  INFO   - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-03-28 14:10:51.806  INFO   - Initializing Spring embedded WebApplicationContext
+2023-03-28 14:10:51.807  INFO   - Root WebApplicationContext: initialization completed in 474 ms
+2023-03-28 14:10:51.972  INFO   - Adding welcome page template: index
+2023-03-28 14:10:52.059  INFO   - LiveReload server is running on port 35729
+2023-03-28 14:10:52.077  INFO   - Starting ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:10:52.082  INFO   - Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-28 14:10:52.090  INFO   - Started SysApplication in 0.818 seconds (JVM running for 805.391)
+2023-03-28 14:10:52.095  INFO   - Condition evaluation unchanged
+2023-03-28 14:10:56.423  INFO   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-28 14:10:56.427  INFO   - Initializing Servlet 'dispatcherServlet'
+2023-03-28 14:10:56.427  INFO   - Completed initialization in 0 ms
+2023-03-28 14:10:56.439  INFO   - HikariPool-2 - Starting...
+2023-03-28 14:10:56.478  INFO   - HikariPool-2 - Start completed.
+2023-03-28 14:10:56.486  INFO   - PhanHuynh         ログインしました
+2023-03-28 14:11:00.084  INFO   - PhanHuynh変更できました
+2023-03-28 14:12:03.149  INFO   - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-03-28 14:12:03.561  INFO   - Pausing ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:12:03.561  INFO   - Stopping service [Tomcat]
+2023-03-28 14:12:03.562  INFO   - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-28 14:12:03.574  WARN   - The web application [ROOT] appears to have started a thread named [HikariPool-2 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.16.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.16.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.16.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.16.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.16.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.16.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.16.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.16.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.16.1/java.lang.Thread.run(Thread.java:829)
+2023-03-28 14:12:03.575  INFO   - Stopping ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:12:03.581  INFO   - Destroying ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:12:03.583  INFO   - HikariPool-2 - Shutdown initiated...
+2023-03-28 14:12:03.592  INFO   - HikariPool-2 - Shutdown completed.
+2023-03-28 14:12:03.695  INFO   - Starting SysApplication using Java 11.0.16.1 on JuneUTF with PID 24740 (C:\Users\juneu\OneDrive\Máy tính\K&K\sys\target\classes started by juneu in C:\Users\juneu\OneDrive\Máy tính\K&K\sys)
+2023-03-28 14:12:03.696  INFO   - No active profile set, falling back to 1 default profile: "default"
+2023-03-28 14:12:04.072  INFO   - Tomcat initialized with port(s): 8080 (http)
+2023-03-28 14:12:04.074  INFO   - Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:12:04.074  INFO   - Starting service [Tomcat]
+2023-03-28 14:12:04.074  INFO   - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-03-28 14:12:04.111  INFO   - Initializing Spring embedded WebApplicationContext
+2023-03-28 14:12:04.111  INFO   - Root WebApplicationContext: initialization completed in 411 ms
+2023-03-28 14:12:04.270  INFO   - Adding welcome page template: index
+2023-03-28 14:12:04.352  INFO   - LiveReload server is running on port 35729
+2023-03-28 14:12:04.367  INFO   - Starting ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:12:04.372  INFO   - Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-28 14:12:04.380  INFO   - Started SysApplication in 0.732 seconds (JVM running for 877.669)
+2023-03-28 14:12:04.383  INFO   - Condition evaluation unchanged
+2023-03-28 14:12:06.899  INFO   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-28 14:12:06.900  INFO   - Initializing Servlet 'dispatcherServlet'
+2023-03-28 14:12:06.902  INFO   - Completed initialization in 2 ms
+2023-03-28 14:12:06.914  INFO   - HikariPool-3 - Starting...
+2023-03-28 14:12:06.947  INFO   - HikariPool-3 - Start completed.
+2023-03-28 14:12:06.966  INFO   - PhanHuynh: 新しいパスワードは:123変更できました
+2023-03-28 14:12:31.214  WARN   - PhanHuynhをログアウトできました
+2023-03-28 14:12:44.319  INFO   - kkkで登録できました
+2023-03-28 14:12:50.723  INFO   - kkk               ログインしました
+2023-03-28 14:13:12.555  WARN   - kkkをログアウトできました
+2023-03-28 14:23:05.868  INFO   - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-03-28 14:23:06.276  INFO   - Pausing ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:23:06.276  INFO   - Stopping service [Tomcat]
+2023-03-28 14:23:06.280  INFO   - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-28 14:23:06.285  WARN   - The web application [ROOT] appears to have started a thread named [HikariPool-3 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.16.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.16.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.16.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.16.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.16.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.16.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.16.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.16.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.16.1/java.lang.Thread.run(Thread.java:829)
+2023-03-28 14:23:06.288  INFO   - Stopping ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:23:06.297  INFO   - Destroying ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:23:06.303  INFO   - HikariPool-3 - Shutdown initiated...
+2023-03-28 14:23:06.313  INFO   - HikariPool-3 - Shutdown completed.
+2023-03-28 14:23:06.425  INFO   - Starting SysApplication using Java 11.0.16.1 on JuneUTF with PID 24740 (C:\Users\juneu\OneDrive\Máy tính\K&K\sys\target\classes started by juneu in C:\Users\juneu\OneDrive\Máy tính\K&K\sys)
+2023-03-28 14:23:06.426  INFO   - No active profile set, falling back to 1 default profile: "default"
+2023-03-28 14:23:06.771  INFO   - Tomcat initialized with port(s): 8080 (http)
+2023-03-28 14:23:06.772  INFO   - Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:23:06.773  INFO   - Starting service [Tomcat]
+2023-03-28 14:23:06.773  INFO   - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-03-28 14:23:06.808  INFO   - Initializing Spring embedded WebApplicationContext
+2023-03-28 14:23:06.809  INFO   - Root WebApplicationContext: initialization completed in 377 ms
+2023-03-28 14:23:06.948  INFO   - Adding welcome page template: index
+2023-03-28 14:23:07.025  INFO   - LiveReload server is running on port 35729
+2023-03-28 14:23:07.040  INFO   - Starting ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:23:07.047  INFO   - Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-28 14:23:07.059  INFO   - Started SysApplication in 0.683 seconds (JVM running for 1540.25)
+2023-03-28 14:23:07.063  INFO   - Condition evaluation unchanged
+2023-03-28 14:47:46.108  INFO   - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-03-28 14:47:46.523  INFO   - Pausing ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:47:46.523  INFO   - Stopping service [Tomcat]
+2023-03-28 14:47:46.530  INFO   - Stopping ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:47:46.534  INFO   - Destroying ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:47:46.644  INFO   - Starting SysApplication using Java 11.0.16.1 on JuneUTF with PID 24740 (C:\Users\juneu\OneDrive\Máy tính\K&K\sys\target\classes started by juneu in C:\Users\juneu\OneDrive\Máy tính\K&K\sys)
+2023-03-28 14:47:46.644  INFO   - No active profile set, falling back to 1 default profile: "default"
+2023-03-28 14:47:47.057  INFO   - Tomcat initialized with port(s): 8080 (http)
+2023-03-28 14:47:47.058  INFO   - Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:47:47.058  INFO   - Starting service [Tomcat]
+2023-03-28 14:47:47.058  INFO   - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-03-28 14:47:47.107  INFO   - Initializing Spring embedded WebApplicationContext
+2023-03-28 14:47:47.108  INFO   - Root WebApplicationContext: initialization completed in 460 ms
+2023-03-28 14:47:47.291  INFO   - Adding welcome page template: index
+2023-03-28 14:47:47.383  INFO   - LiveReload server is running on port 35729
+2023-03-28 14:47:47.406  INFO   - Starting ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:47:47.413  INFO   - Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-28 14:47:47.423  INFO   - Started SysApplication in 0.82 seconds (JVM running for 3020.467)
+2023-03-28 14:47:47.427  INFO   - Condition evaluation unchanged
+2023-03-28 14:47:55.089  INFO   - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-03-28 14:47:55.469  INFO   - Pausing ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:47:55.469  INFO   - Stopping service [Tomcat]
+2023-03-28 14:47:55.477  INFO   - Stopping ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:47:55.480  INFO   - Destroying ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:47:55.586  INFO   - Starting SysApplication using Java 11.0.16.1 on JuneUTF with PID 24740 (C:\Users\juneu\OneDrive\Máy tính\K&K\sys\target\classes started by juneu in C:\Users\juneu\OneDrive\Máy tính\K&K\sys)
+2023-03-28 14:47:55.586  INFO   - No active profile set, falling back to 1 default profile: "default"
+2023-03-28 14:47:55.916  INFO   - Tomcat initialized with port(s): 8080 (http)
+2023-03-28 14:47:55.917  INFO   - Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:47:55.918  INFO   - Starting service [Tomcat]
+2023-03-28 14:47:55.918  INFO   - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-03-28 14:47:55.950  INFO   - Initializing Spring embedded WebApplicationContext
+2023-03-28 14:47:55.951  INFO   - Root WebApplicationContext: initialization completed in 359 ms
+2023-03-28 14:47:56.100  INFO   - Adding welcome page template: index
+2023-03-28 14:47:56.181  INFO   - LiveReload server is running on port 35729
+2023-03-28 14:47:56.196  INFO   - Starting ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:47:56.202  INFO   - Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-28 14:47:56.217  INFO   - Started SysApplication in 0.672 seconds (JVM running for 3029.262)
+2023-03-28 14:47:56.221  INFO   - Condition evaluation unchanged
+2023-03-28 14:50:10.808  INFO   - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-03-28 14:50:11.220  INFO   - Pausing ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:50:11.220  INFO   - Stopping service [Tomcat]
+2023-03-28 14:50:11.227  INFO   - Stopping ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:50:11.233  INFO   - Destroying ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:50:11.360  INFO   - Starting SysApplication using Java 11.0.16.1 on JuneUTF with PID 24740 (C:\Users\juneu\OneDrive\Máy tính\K&K\sys\target\classes started by juneu in C:\Users\juneu\OneDrive\Máy tính\K&K\sys)
+2023-03-28 14:50:11.360  INFO   - No active profile set, falling back to 1 default profile: "default"
+2023-03-28 14:50:11.765  INFO   - Tomcat initialized with port(s): 8080 (http)
+2023-03-28 14:50:11.766  INFO   - Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:50:11.766  INFO   - Starting service [Tomcat]
+2023-03-28 14:50:11.767  INFO   - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-03-28 14:50:11.804  INFO   - Initializing Spring embedded WebApplicationContext
+2023-03-28 14:50:11.805  INFO   - Root WebApplicationContext: initialization completed in 441 ms
+2023-03-28 14:50:11.932  INFO   - Adding welcome page template: index
+2023-03-28 14:50:12.015  INFO   - LiveReload server is running on port 35729
+2023-03-28 14:50:12.032  INFO   - Starting ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:50:12.045  INFO   - Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-28 14:50:12.056  INFO   - Started SysApplication in 0.75 seconds (JVM running for 3165.089)
+2023-03-28 14:50:12.062  INFO   - Condition evaluation unchanged
+2023-03-28 14:53:08.935  INFO   - Restarting due to 2 class path changes (1 addition, 0 deletions, 1 modification)
+2023-03-28 14:53:09.359  INFO   - Pausing ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:53:09.359  INFO   - Stopping service [Tomcat]
+2023-03-28 14:53:09.367  INFO   - Stopping ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:53:09.371  INFO   - Destroying ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:53:09.484  INFO   - Starting SysApplication using Java 11.0.16.1 on JuneUTF with PID 24740 (C:\Users\juneu\OneDrive\Máy tính\K&K\sys\target\classes started by juneu in C:\Users\juneu\OneDrive\Máy tính\K&K\sys)
+2023-03-28 14:53:09.485  INFO   - No active profile set, falling back to 1 default profile: "default"
+2023-03-28 14:53:09.861  INFO   - Tomcat initialized with port(s): 8080 (http)
+2023-03-28 14:53:09.862  INFO   - Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:53:09.863  INFO   - Starting service [Tomcat]
+2023-03-28 14:53:09.863  INFO   - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-03-28 14:53:09.896  INFO   - Initializing Spring embedded WebApplicationContext
+2023-03-28 14:53:09.896  INFO   - Root WebApplicationContext: initialization completed in 406 ms
+2023-03-28 14:53:10.048  INFO   - Adding welcome page template: index
+2023-03-28 14:53:10.121  INFO   - LiveReload server is running on port 35729
+2023-03-28 14:53:10.134  INFO   - Starting ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:53:10.139  INFO   - Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-28 14:53:10.146  INFO   - Started SysApplication in 0.707 seconds (JVM running for 3343.166)
+2023-03-28 14:53:10.150  INFO   - Condition evaluation unchanged
+2023-03-28 14:53:13.679  INFO   - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-03-28 14:53:14.025  INFO   - Pausing ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:53:14.025  INFO   - Stopping service [Tomcat]
+2023-03-28 14:53:14.033  INFO   - Stopping ProtocolHandler ["http-nio-8080"]
+2023-03-28 14:53:14.039  INFO   - Destroying ProtocolHandler ["http-nio-8080"]

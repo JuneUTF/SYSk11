@@ -1,0 +1,14 @@
+2023-03-30 00:09:46.353  INFO   - Starting SysApplication using Java 11.0.16.1 on JuneUTF with PID 8136 (C:\Users\juneu\OneDrive\Máy tính\K&K\sys\target\classes started by juneu in C:\Users\juneu\OneDrive\Máy tính\K&K\sys)
+2023-03-30 00:09:46.358  INFO   - No active profile set, falling back to 1 default profile: "default"
+2023-03-30 00:09:46.531  INFO   - Tomcat initialized with port(s): 8080 (http)
+2023-03-30 00:09:46.532  INFO   - Starting service [Tomcat]
+2023-03-30 00:09:46.532  INFO   - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-03-30 00:09:46.549  INFO   - Initializing Spring embedded WebApplicationContext
+2023-03-30 00:09:46.550  INFO   - Root WebApplicationContext: initialization completed in 190 ms
+2023-03-30 00:09:46.634  INFO   - Adding welcome page template: index
+2023-03-30 00:09:46.671  INFO   - LiveReload server is running on port 35729
+2023-03-30 00:09:46.679  INFO   - Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-30 00:09:46.683  INFO   - Started SysApplication in 0.407 seconds (JVM running for 100.201)
+2023-03-30 00:09:46.684  INFO   - Condition evaluation unchanged
+2023-03-30 00:11:53.271  INFO   - Application shutdown requested.
+2023-03-30 00:11:53.446  INFO   - Stopping service [Tomcat]

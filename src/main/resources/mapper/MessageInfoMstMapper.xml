@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kk.soft.co.jp.sys.mapper.MessageInfoMstMapper">
+
+    <insert id="insert" parameterType="kk.soft.co.jp.sys.model.MessageInfoMstModel" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO message_info_mst(msg,sender) VALUES (#{msg},#{sender})
+    </insert>
+
+
+</mapper>

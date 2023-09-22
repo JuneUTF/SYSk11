@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHAN VAN HUYNH</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+    <link rel="stylesheet" th:href="@{/style/css/style.css}">
+</head>
+<body >
+<div class="show">
+    
+<form th:action="@{/newpass}" method="post">
+        <div class="show_user"><span>パスワード変更</span></div>
+        <div class="user-tt">
+            <div th:if="${success_pass}">
+                <div class="alert alert-success" th:text="${success_pass}"></div>
+            </div>
+            <div th:if="${error_pass}">
+                <div class="alert alert-danger" th:text="${error_pass}"></div>
+            </div>
+    <!-- Email input -->
+    
+    </div>
+    <div class="form-outline mb-4">
+        <input type="password" id="password" name="password" class="form-control" />
+        <label class="form-label" for="password">パスワード </label>
+    </div>
+
+    <!-- Password input -->
+    <div class="form-outline mb-4">
+        <input type="password" id="repeatpassword" name="repeatpassword" class="form-control" />
+        <label class="form-label" for="repeatpassword">再パスワード</label>
+    </div>
+
+
+    <!-- Submit button -->
+    <button type="submit" class="btn btn-primary btn-block mb-4">決定</button>
+    <a class="btn btn-primary btn-block mb-4" href="/information">会員ユーザー情報</a>
+    
+
+    <!-- Register buttons -->
+</form>
+</body >
+</html >

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kk.soft.co.jp.sys.mapper.UserMapper">
+
+    <insert id="insert" parameterType="kk.soft.co.jp.sys.model.UserModel" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO huynh_username (username,password,role,youname,readname,birthday,email,sex,contry,hobbies) VALUES (#{username},md5(#{password}),'user',#{youname},#{readname},#{birthday},#{email},#{sex},#{contry},#{hobbies})
+    </insert>
+    <update id="setNewPassword" parameterType="kk.soft.co.jp.sys.model.UserModel" useGeneratedKeys="true" keyProperty="id">
+        UPDATE huynh_username SET password = md5(#{password}) WHERE username = #{username}
+    </update>
+    <select id="selectpass" resultType="kk.soft.co.jp.sys.model.UserModel">
+        SELECT id FROM huynh_username WHERE username=#{username} AND youname=#{youname} AND birthday=#{birthday} AND sex=#{sex} 
+    </select>
+    <!-- <update id="updatepass" parameterType="kk.soft.co.jp.sys.model.UserModel" useGeneratedKeys="true" keyProperty="id">
+        UPDATE huynh_username SET password = md5(#{password}) WHERE username = #{username}
+    </update> -->
+
+
+</mapper>
